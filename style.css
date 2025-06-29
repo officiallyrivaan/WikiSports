@@ -4,7 +4,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('https://i.pinimg.com/736x/0d/ee/f1/0deef15da239a6b5a2efc48b762ca2f5.jpg');
+  background-image: url('sportswiki.png');
   background-size: cover; 
   background-attachment: fixed;        /* Make image cover the whole screen */
   background-repeat: repeat;
@@ -115,7 +115,7 @@ button[type="submit"]:hover {
 }
 
 .dark-theme {
-  background-image: url('https://i.pinimg.com/736x/7b/23/67/7b2367bd7ebe682baddda39e28fb12f0.jpg');
+  background-image: url('wikidark.png');
   background-attachment: fixed;
   color: #fff;
 }
