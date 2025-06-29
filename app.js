@@ -6,6 +6,18 @@ const searchResults = document.getElementById("search-results");
 const themeToggler = document.getElementById("theme-toggler");
 const body = document.body;
 
+// Restore theme on page load
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-theme");
+  themeToggler.textContent = "Dark";
+  themeToggler.style.background = "#fff";
+  themeToggler.style.color = "#333";
+} else {
+  themeToggler.textContent = "Light";
+  themeToggler.style.border = "2px solid #ccc";
+  themeToggler.style.color = "#333";
+}
+
 async function searchWikipeida(query) {
   const encodedQuery = encodeURIComponent(query);
   const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${encodedQuery}`;
@@ -25,9 +37,9 @@ function displayResults(results) {
   searchResults.innerHTML = "";
 
   results.forEach((result) => {
-    const url = `https://en.wikipedia.org/?curid=${results.pageid}`;
-    const titleLink = `<a href="${url}" target="_blank" rel="noopener">${result.title} </a>`;
-    const urlLink = `<a href="${url} class="result-link" target="_blank" rel="noopener">${url}</a>`;
+    const url = `https://en.wikipedia.org/?curid=${result.pageid}`;
+    const titleLink = `<a href="${url}" target="_blank" rel="noopener">${result.title}</a>`;
+    const urlLink = `<a href="${url}" class="result-link" target="_blank" rel="noopener">${url}</a>`;
 
     const resultItme = document.createElement("div");
     resultItme.className = "result-item";
@@ -66,32 +78,6 @@ searchForm.addEventListener("submit", async (e) => {
     searchResults.innerHTML = `<p>An error occured while searching. Please try again later. </p>`;
   }
 });
-
-// Event listener for the theme toggler
-themeToggler.addEventListener("click"), () => 
-  body.classList.toggle("dark-theme");
-  if (body.classList.contains("dark-theme")) {
-    themeToggler.textContent = "Dark";
-    themeToggler.style.background = "#fff";
-    themeToggler.style.color = "#333";
-  } else {
-    themeToggler.textContent = "Light";
-    themeToggler.style.border = "2px solid #ccc";
-    themeToggler.style.color = "#333";
-  }
-  // ...existing code...
-
-// Restore theme on page load
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-theme");
-  themeToggler.textContent = "Dark";
-  themeToggler.style.background = "#fff";
-  themeToggler.style.color = "#333";
-} else {
-  themeToggler.textContent = "Light";
-  themeToggler.style.border = "2px solid #ccc";
-  themeToggler.style.color = "#333";
-}
 
 // Event listener for the theme toggler
 themeToggler.addEventListener("click", () => {
