@@ -26,7 +26,7 @@ function displayResults(results) {
 
   results.forEach((result) => {
     const url = `https://en.wikipedia.org/?curid=${result.pageid}`;
-    const titleLink = `<a href="${url}" target="_blank" rel="noopener">${result.title}</a>`;
+    <h3 class="result-title">${titleLink}</h3>
     const urlLink = `<a href="${url}" class="result-link" target="_blank" rel="noopener">${url}</a>`;
 
     const resultItme = document.createElement("div");
