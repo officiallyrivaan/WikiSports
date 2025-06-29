@@ -6,18 +6,6 @@ const searchResults = document.getElementById("search-results");
 const themeToggler = document.getElementById("theme-toggler");
 const body = document.body;
 
-// Restore theme on page load
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-theme");
-  themeToggler.textContent = "Dark";
-  themeToggler.style.background = "#fff";
-  themeToggler.style.color = "#333";
-} else {
-  themeToggler.textContent = "Light";
-  themeToggler.style.border = "2px solid #ccc";
-  themeToggler.style.color = "#333";
-}
-
 async function searchWikipeida(query) {
   const encodedQuery = encodeURIComponent(query);
   const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${encodedQuery}`;
@@ -86,11 +74,9 @@ themeToggler.addEventListener("click", () => {
     themeToggler.textContent = "Dark";
     themeToggler.style.background = "#fff";
     themeToggler.style.color = "#333";
-    localStorage.setItem("theme", "dark");
   } else {
     themeToggler.textContent = "Light";
     themeToggler.style.border = "2px solid #ccc";
     themeToggler.style.color = "#333";
-    localStorage.setItem("theme", "light");
   }
 });
