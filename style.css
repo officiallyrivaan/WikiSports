@@ -5,6 +5,9 @@
 body {
   font-family: Arial, sans-serif;
   background-image: url('https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?semt=ais_items_boosted&w=740');
+  background-size: cover;         /* Make image cover the whole screen */
+  background-position: center;    /* Center the image */
+  background-repeat: no-repeat;   /* Prevent tiling */
   margin: 0;
   padding: 0;
 }
@@ -117,7 +120,7 @@ button[type="submit"]:hover {
 .dark-theme #search-input {
   background-color: #454545;
   color: #fff;
-  border-color: #fff;
+  border-color: #080808;
 }
 
 .dark-theme #search-input:focus {
