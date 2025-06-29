@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-image: url('https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?semt=ais_items_boosted&w=740');
   margin: 0;
   padding: 0;
 }
@@ -90,15 +91,7 @@ button[type="submit"]:hover {
   height: 10rem;
 }
 
-.light-theme {
-  background-image: url('https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?semt=ais_items_boosted&w=740');
-}
-.light-theme {
-  background-image: url('https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?semt=ais_items_boosted&w=740https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 /* Dark theme */
 .header-container {
   display: flex;
