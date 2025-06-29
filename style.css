@@ -68,6 +68,7 @@ button[type="submit"]:hover {
 }
 
 .result-title {
+  color:#90caf9;
   font-size: 1.5rem;
   margin-top: 0;
 }
