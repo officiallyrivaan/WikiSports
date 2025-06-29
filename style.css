@@ -124,7 +124,7 @@ button[type="submit"]:hover {
 }
 
 .dark-theme #search-input:focus {
-  border-color: #0074d9;
+  border-color: #90caf9;
 }
 
 .dark-theme button[type="submit"] {
