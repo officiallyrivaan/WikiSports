@@ -4,7 +4,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('sportswiki.png');
+  background-image: url('images/sportswiki.png');
   background-size: cover; 
   background-attachment: fixed;        /* Make image cover the whole screen */
   background-repeat: repeat;
@@ -115,7 +115,7 @@ button[type="submit"]:hover {
 }
 
 .dark-theme {
-  background-image: url('wikidark.png');
+  background-image: url('images/wikidark.png');
   background-attachment: fixed;
   color: #fff;
 }
