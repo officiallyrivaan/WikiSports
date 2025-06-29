@@ -68,7 +68,7 @@ searchForm.addEventListener("submit", async (e) => {
 });
 
 // Event listener for the theme toggler
-themeToggler.addEventListener("click", () => {
+themeToggler.addEventListener("click"), () => 
   body.classList.toggle("dark-theme");
   if (body.classList.contains("dark-theme")) {
     themeToggler.textContent = "Dark";
@@ -78,5 +78,33 @@ themeToggler.addEventListener("click", () => {
     themeToggler.textContent = "Light";
     themeToggler.style.border = "2px solid #ccc";
     themeToggler.style.color = "#333";
+  }
+  // ...existing code...
+
+// Restore theme on page load
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-theme");
+  themeToggler.textContent = "Dark";
+  themeToggler.style.background = "#fff";
+  themeToggler.style.color = "#333";
+} else {
+  themeToggler.textContent = "Light";
+  themeToggler.style.border = "2px solid #ccc";
+  themeToggler.style.color = "#333";
+}
+
+// Event listener for the theme toggler
+themeToggler.addEventListener("click", () => {
+  body.classList.toggle("dark-theme");
+  if (body.classList.contains("dark-theme")) {
+    themeToggler.textContent = "Dark";
+    themeToggler.style.background = "#fff";
+    themeToggler.style.color = "#333";
+    localStorage.setItem("theme", "dark");
+  } else {
+    themeToggler.textContent = "Light";
+    themeToggler.style.border = "2px solid #ccc";
+    themeToggler.style.color = "#333";
+    localStorage.setItem("theme", "light");
   }
 });
