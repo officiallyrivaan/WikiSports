@@ -97,6 +97,7 @@ button[type="submit"]:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-color: #090909;
 }
 
 #theme-toggler {
