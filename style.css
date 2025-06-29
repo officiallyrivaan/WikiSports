@@ -5,8 +5,8 @@
 body {
   font-family: Arial, sans-serif;
   background-image: url('https://i.pinimg.com/736x/0d/ee/f1/0deef15da239a6b5a2efc48b762ca2f5.jpg');
-  background-size: cover;         /* Make image cover the whole screen */
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   margin: 0;
   padding: 0;
@@ -93,7 +93,6 @@ button[type="submit"]:hover {
   font-size: 2rem;
   height: 10rem;
 }
-
 
 /* Dark theme */
 .header-container {
