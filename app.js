@@ -6,19 +6,20 @@ const searchResults = document.getElementById("search-results");
 const themeToggler = document.getElementById("theme-toggler");
 const body = document.body;
 
-async function searchWikipeida(query) {
+async function searchWikipedia(query) {
   const encodedQuery = encodeURIComponent(query);
   const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${encodedQuery}`;
 
-  const reponse = await fetch(endpoint);
+  const response = await fetch(endpoint);
 
-  if (!reponse.ok) {
-    throw new Error("Faild to fetch search results form wikipedia API.");
+  if (!response.ok) {
+    throw new Error("Failed to fetch search results from Wikipedia API.");
   }
 
-  const json = await reponse.json();
+  const json = await response.json();
   return json;
 }
+
 
 function displayResults(results) {
   // Remove the loading spinner
