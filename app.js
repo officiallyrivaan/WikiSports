@@ -55,7 +55,7 @@ searchForm.addEventListener("submit", async (e) => {
   searchResults.innerHTML = "<div class='spinner'>Loading ... </div>";
 
   try {
-    const results = await searchWikipeida(query);
+    const results = await searchWikipedia(query);
 
     if (results.query.searchinfo.totalhits === 0) {
       searchResults.innerHTML = "<p>No results found. </p>";
