@@ -11,6 +11,7 @@
 }
 
 .nav-container {
+  font-family: 'Segoe UI',sans-serif;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto; 
