@@ -2,10 +2,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('images/tabletenniswebs.jpg');
+  background-image: url('images/fzd.png');
+  filter: blur(8px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-family: 'Segoe UI',sans-serif;
+  color: white;
 }
 
 
