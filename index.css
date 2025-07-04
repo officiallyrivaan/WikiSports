@@ -6,11 +6,17 @@
   position: relative;
   background-image: url('images/fzd.png');
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: #ffffff;
 }
-.h1 {
+h1 {
   font-family: 'Segoe UI', sans-serif;
   color: white;
+}
+h2 {
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
 }
 
 
