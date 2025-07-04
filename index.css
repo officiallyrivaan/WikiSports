@@ -17,7 +17,6 @@
   background-image: url('images/fzd.png');
   background-size: cover;
   background-position: center;
-  filter: blur(8px);
   z-index: -1;
 }
 
