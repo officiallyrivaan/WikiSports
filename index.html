@@ -1,25 +1,35 @@
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WikiSports</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/png" href="favicon.png?v=5">
+  <link rel="stylesheet" href="wiki.css" />
 </head>
-<body>
+  <body>
+     <nav class="navbar">
   <div class="nav-container">
-   <nav class="navbar">
-    <a href="wiki.html" class="logo">WikiSports</a>
+    <a href="index.html" class="logo">WikiSports</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">Upcoming</a></li>
       <li><a href="wiki.html">Wiki</a></li>
     </ul>
-   </nav>
-  </div> 
-<h1>About</h1>
-<p>Welcome to WikiSports! The ultimate destination for sport fans! 
-This website has everything a sport fan will ever need
- to keep track of the Sports World!</p>
- </body>
-</html>
+  </div>
+</nav>
+    <div class="container">
+      <div class="header-container">
+        <h1>Search WikiSports</h1>
+        <span id="theme-toggler">Light</span>
+      </div>
+
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Enter search term" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="search-results"></div>
+    </div>
+ <script src="app.js"></script>
+  </body>
+ </html>
