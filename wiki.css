@@ -140,8 +140,8 @@ button[type="submit"]:hover {
 }
 
 .navbar {
-  background-color: #111; 
-  color: white;
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
   width: 100%;
   padding: 1rem 0;
   position: sticky;
