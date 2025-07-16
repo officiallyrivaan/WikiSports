@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-image: url('images/fzd.png');
+  background-image: url('images/fzdblur.png');
   background-size: cover; 
   background-attachment: fixed;        /* Make image cover the whole screen */
   background-repeat: repeat;
@@ -13,6 +13,10 @@ body {
   padding: 0;
 }
 h1 {
+  color: #ffffff;
+  font-family : 'Segoe UI', sans-serif;
+}
+h2 {
   color: #ffffff;
   font-family : 'Segoe UI', sans-serif;
 }
