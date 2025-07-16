@@ -9,9 +9,9 @@ body {
   background-attachment: fixed;        /* Make image cover the whole screen */
   background-repeat: repeat;
   background-position: center;
-  filter: blur(8px);
   margin: 0;
   padding: 0;
+  backdrop-filter: blur(5px); 
 }
 h1 {
   color: #ffffff;
